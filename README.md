@@ -18,6 +18,7 @@ Below you will find
 
 **For more information on creating postgres database see https://www.postgresql.org/docs/9.1/static/app-createdb.html**
 **For more information on using a pg_dump_file see https://www.postgresql.org/docs/9.1/static/backup-dump.html#BACKUP-DUMP-RESTORE**
+**For more information on creating a user see https://www.postgresql.org/docs/9.1/static/app-createuser.html**
 
 ## Explanation of Data
 
