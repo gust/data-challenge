@@ -23,11 +23,11 @@ Below you will find
 Descriptions of the 4 tables and their columns are as follows:
 
 __startups__: Represents a startup that is able (but not required) to apply for funding
+
 |Column|Description|
 |------|-----------|
 |id |The identifier for the startup|
 |name |The name of the startup|
-
 
 __investor_groups__: Represents an investor group that is able to receive funding applications
 
