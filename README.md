@@ -25,8 +25,9 @@ Descriptions of the 4 tables and their columns are as follows:
 __startups__: Represents a startup that is able (but not required) to apply for funding
 |Column|Description|
 |------|-----------|
-|id|The identifier for the startup|
-|name|The name of the startup|
+|id |The identifier for the startup|
+|name |The name of the startup|
+
 
 __investor_groups__: Represents an investor group that is able to receive funding applications
 
@@ -35,6 +36,7 @@ __investor_groups__: Represents an investor group that is able to receive fundin
 |id |The identifier for the investor group|
 |name |The name of the investor group|
 
+
 __deals__: Represents an funding application between a startup and an investor group
 
 |Column|Description|
@@ -42,6 +44,7 @@ __deals__: Represents an funding application between a startup and an investor g
 |id |The identifier for the deal|
 |startup_id |The id of the startup that submitted the funding application|
 |investor_group_id |The id of the investor group that the startup submitted the funding application to|
+
 
 __locations__: A polymorphic table representing the address of startups and investor groups
 
@@ -53,6 +56,8 @@ __locations__: A polymorphic table representing the address of startups and inve
 |street_num|The street number of the address|
 |street_name|The street name of the address|
 |country|The country where the address is located|
+
+
 
 ##Questions to answer
 
