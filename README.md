@@ -17,7 +17,9 @@ Below you will find
 - The username for the newly created database is `postgres` you can access the data using the command `psql -h localhost -p 5432 -U postgres -d gust_challenge`
 
 **For more information on creating postgres database see https://www.postgresql.org/docs/9.1/static/app-createdb.html**
+
 **For more information on using a pg_dump_file see https://www.postgresql.org/docs/9.1/static/backup-dump.html#BACKUP-DUMP-RESTORE**
+
 **For more information on creating a user see https://www.postgresql.org/docs/9.1/static/app-createuser.html**
 
 ## Explanation of Data
