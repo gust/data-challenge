@@ -32,23 +32,23 @@ __investor_groups__: Represents an investor group that is able to receive fundin
 
 |Column|Description|
 |------|-----------|
-|id|The identifier for the investor group|
-|name|The name of the investor group|
+|id |The identifier for the investor group|
+|name |The name of the investor group|
 
 __deals__: Represents an funding application between a startup and an investor group
 
 |Column|Description|
 |------|-----------|
-|id|The identifier for the deal|
-|startup_id|The id of the startup that submitted the funding application|
-|investor_group_id|The id of the investor group that the startup submitted the funding application to|
+|id |The identifier for the deal|
+|startup_id |The id of the startup that submitted the funding application|
+|investor_group_id |The id of the investor group that the startup submitted the funding application to|
 
 __locations__: A polymorphic table representing the address of startups and investor groups
 
 |Column|Description|
 |------|-----------|
-|id|The identifier for the location|
-|locatable_id|The id of the startup or investor group that the address refers to|
+|id |The identifier for the location|
+|locatable_id |The id of the startup or investor group that the address refers to|
 |locatable_type|specifies whether the `locatable_id` references a startup or investor group|
 |street_num|The street number of the address|
 |street_name|The street name of the address|
