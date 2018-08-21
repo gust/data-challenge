@@ -59,7 +59,7 @@ __locations__: A polymorphic table representing the address of startups and inve
 
 
 
-##Questions to answer
+# Questions to answer
 
 - How many startups submitted an application
 - Which startups didn’t submit any applications (name only)
