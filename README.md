@@ -11,6 +11,7 @@ Below you will find
 
 - You will need Postgresql 9.1 or higher to access the data, you can download postgres by following the instructions [here](https://www.postgresql.org/download/)
 - Once you have postgres installed you can download the dataset we created for the challenge. Click this [link](https://s3.amazonaws.com/gust-data-challenge/pg_dump_file) and the data `pg_dump_file` file should download
+- The following steps assume that your postgres install has a user `postgres` with the ability to create new databases and tables, if that is not the case, please create one
 - Using your terminal, create a new database called gust_challenge using the command ` createdb -h localhost -p 5432 gust_challenge -U postgres`
 - Load the data located in the downloaded `pg_dump_file` into the newly created database by running ` psql -h localhost -p 5432 -U postgres -d gust_challenge < pg_dump_file`
 - The username for the newly created database is `postgres` you can access the data using the command `psql -h localhost -p 5432 -U postgres -d gust_challenge`
