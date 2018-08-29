@@ -68,3 +68,5 @@ __locations__: A polymorphic table representing the address of startups and inve
 - Which startups didn’t submit any applications (name only)
 - Which startup submitted the most applications, and what are the names of the groups they applied to (name of startup and name of investor groups)
 - How many startups applied to a group in a different country than their own
+
+# Please use this [google form](https://docs.google.com/forms/d/e/1FAIpQLSdyv7_iXOh8hXgO6iqsO8qACPuSg1wSqOpRffeD9yFXTA3I4A/viewform) to submit your answers (please be sure to include the same email you used on your application)
