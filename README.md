@@ -2,10 +2,8 @@
 
 ## Overview
 
-Thank you for expressing interest in the data analyst position at Gust.
+Thank you for expressing interest in the Inference Data Scientist position at Gust.
 This challenge is designed to test your familiarity with SQL (of the postgres flavor). When answering these questions please provide the Query used to reach the answer as well as the answer itself.
-
-Below you will find
 
 ## Setting up
 
@@ -40,7 +38,7 @@ __investor_groups__: Represents an investor group that is able to receive fundin
 |name |The name of the investor group|
 
 
-__deals__: Represents an funding application between a startup and an investor group
+__deals__: Represents a funding application between a startup and an investor group
 
 |Column|Description|
 |------|-----------|
