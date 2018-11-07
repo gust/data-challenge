@@ -3,7 +3,7 @@
 ## Overview
 
 Thank you for expressing interest in the Inference Data Scientist position at Gust.
-This challenge is designed to test your familiarity with SQL (of the postgres flavor). When answering these questions please provide the Query used to reach the answer as well as the answer itself.
+This challenge is designed to test your ability to organize and interpret data.
 
 ## Setting up
 
