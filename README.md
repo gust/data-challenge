@@ -48,11 +48,7 @@ The output should be in the form:
 |Day|Average revenue per customer|
 |---|---|
 |0|$x|
-|.
-.
-.| .
-.
-.|
+|...|...|
 |365| $y|
 
 Where $x represents the calculation above at day 0, $y represents the calculation at day 365 etc
