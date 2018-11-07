@@ -45,6 +45,7 @@ Taking answer 2 and dividing by answer 1 gives us the the average revenue per cu
     - Hint: you can use the psql function generate_series to create the numbers between 1 and 365
     
 The output should be in the form:
+
 |Day|Average revenue per customer|
 |---|---|
 |0|$x|
