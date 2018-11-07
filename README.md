@@ -8,9 +8,9 @@ This challenge is designed to test your familiarity with SQL (of the postgres fl
 ## Setting up
 
 - You will need Postgresql 9.1 or higher to access the data, you can download postgres by following the instructions [here](https://www.postgresql.org/download/)
-- Once you have postgres installed you can download the dataset we created for the challenge. Click this [link](https://s3.amazonaws.com/gust-data-challenge/pg_dump_file) and the data `pg_dump_file` file should download
+- Once you have postgres installed you can download the dataset we created for the challenge. Click this [link](https://s3.console.aws.amazon.com/s3/object/gust-data-challenge/data_3) and the data `data_3` file should download
 - Using your terminal, create a new database called gust_challenge using the `createdb` command ` createdb gust_challenge` (depending on your setup you may need to specify the database host, port and user to run the command)
-- Load the data located in the downloaded `pg_dump_file` into the newly created database by running ` psql -d gust_challenge < pg_dump_file` (once again, you may need to specify the database host, port and user to run the command)
+- Load the data located in the downloaded pg data dump file `data_3` into the newly created database by running ` psql -d gust_challenge < data_3` (once again, you may need to specify the database host, port and user to run the command)
 - You can access the database by running the `psql` command (possibly with the host, port and user specified)
 
 **For more information on creating postgres database see https://www.postgresql.org/docs/9.1/static/app-createdb.html**
@@ -21,50 +21,26 @@ This challenge is designed to test your familiarity with SQL (of the postgres fl
 
 ## Explanation of Data
 
-Descriptions of the 4 tables and their columns are as follows:
+There is only one table named Payments. The table tracks every time someone pays for a service. Every row represents a payment that was made including the time the payment was made, the id of the user that made the payment and the amount that the payment was for
 
-__startups__: Represents a startup that is able (but not required) to apply for funding
-
+|---|---|
 |Column|Description|
-|------|-----------|
-|id |The identifier for the startup|
-|name |The name of the startup|
+|id| ID of row|
+|created_at|timestamp of when the payment was made|
+|user_id| ID of user that made the payment|
+|amount| amount in USD that the payment was for
 
-__investor_groups__: Represents an investor group that is able to receive funding applications
+# Question to answer
 
-|Column|Description|
-|------|-----------|
-|id |The identifier for the investor group|
-|name |The name of the investor group|
+We are interested in seeing the average revenue per customer over time (up to 365 days)
 
+In order to calculate the average revenue per customer at a particular day (say day n), we need to calculate 2 things:
+  1. How many customers are at least n days old (at least n days between first purchase and today)?
+  1. Of those customers above, what was the cumulative total of purchases in their first n days (all purchases made within n days of their first purchase).
 
-__deals__: Represents a funding application between a startup and an investor group
+Taking answer 2 and dividing by answer 1 gives us the the average revenue per customer at n days
 
-|Column|Description|
-|------|-----------|
-|id |The identifier for the deal|
-|startup_id |The id of the startup that submitted the funding application|
-|investor_group_id |The id of the investor group that the startup submitted the funding application to|
-
-
-__locations__: A polymorphic table representing the address of startups and investor groups
-
-|Column|Description|
-|------|-----------|
-|id |The identifier for the location|
-|locatable_id |The id of the startup or investor group that the address refers to|
-|locatable_type|specifies whether the `locatable_id` references a startup or investor group|
-|street_num|The street number of the address|
-|street_name|The street name of the address|
-|country|The country where the address is located|
-
-
-
-# Questions to answer
-
-1. How many startups submitted an application
-1. Which startups didn’t submit any applications (name only)
-1. Which startup submitted the most applications, and what are the names of the groups they applied to (name of startup and name of investor groups)
-1. How many startups applied to a group in a different country than their own
+3. How would you go about graphing the average revenue per customer over time? 
+  - Hint: you can use the psql function generate_series to create the numbers between 1 and 365
 
 ## Please use this [google form](https://docs.google.com/forms/d/e/1FAIpQLSdyv7_iXOh8hXgO6iqsO8qACPuSg1wSqOpRffeD9yFXTA3I4A/viewform) to submit your answers (please be sure to include the same email you used on your application)
