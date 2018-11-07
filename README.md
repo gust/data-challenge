@@ -49,8 +49,9 @@ The output should be in the form:
 |Day|Average revenue per customer|
 |---|---|
 |0|$x|
+|1|$y|
 |...|...|
-|365| $y|
+|365| $z|
 
-Where $x represents the calculation above at day 0, $y represents the calculation at day 365 etc
+Where $x represents the calculation above at day 0, $y represents the calculation at day 1, $z represents it at day 365 etc
 ## Please use this [google form](https://docs.google.com/forms/d/e/1FAIpQLSdyv7_iXOh8hXgO6iqsO8qACPuSg1wSqOpRffeD9yFXTA3I4A/viewform) to submit your answers (please be sure to include the same email you used on your application)
