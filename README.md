@@ -33,6 +33,7 @@ There is only one table named Payments. The table tracks every time someone pays
 # Question to answer
 
 We are interested in seeing the average revenue per customer over time (up to 365 days)
+If you use any technologies other than postgresql to compute this data, please include the program used as well as any additional modules required in order to run the code.
 
 In order to calculate the average revenue per customer at a particular day (say day n), we need to calculate 2 things:
   1. How many customers are at least n days old (at least n days between first purchase and today)?
@@ -41,6 +42,18 @@ In order to calculate the average revenue per customer at a particular day (say 
 Taking answer 2 and dividing by answer 1 gives us the the average revenue per customer at n days
 
 3. How would you go about graphing the average revenue per customer over time? 
-  - Hint: you can use the psql function generate_series to create the numbers between 1 and 365
+    - Hint: you can use the psql function generate_series to create the numbers between 1 and 365
+    
+The output should be in the form:
+|Day|Average revenue per customer|
+|---|---|
+|0|$x|
+|.
+.
+.| .
+.
+.|
+|365| $y|
 
+Where $x represents the calculation above at day 0, $y represents the calculation at day 365 etc
 ## Please use this [google form](https://docs.google.com/forms/d/e/1FAIpQLSdyv7_iXOh8hXgO6iqsO8qACPuSg1wSqOpRffeD9yFXTA3I4A/viewform) to submit your answers (please be sure to include the same email you used on your application)
