@@ -8,7 +8,7 @@ This challenge is designed to test your ability to organize and interpret data.
 ## Setting up
 
 - You will need Postgresql 9.1 or higher to access the data, you can download postgres by following the instructions [here](https://www.postgresql.org/download/)
-- Once you have postgres installed you can download the dataset we created for the challenge. Click this [link](https://s3.console.aws.amazon.com/s3/object/gust-data-challenge/data_3) and the data `data_3` file should download
+- Once you have postgres installed you can download the dataset we created for the challenge. Click this [link](https://s3.amazonaws.com/gust-data-challenge/data_3) and the data `data_3` file should download
 - Using your terminal, create a new database called gust_challenge using the `createdb` command ` createdb gust_challenge` (depending on your setup you may need to specify the database host, port and user to run the command)
 - Load the data located in the downloaded pg data dump file `data_3` into the newly created database by running ` psql -d gust_challenge < data_3` (once again, you may need to specify the database host, port and user to run the command)
 - You can access the database by running the `psql` command (possibly with the host, port and user specified)
