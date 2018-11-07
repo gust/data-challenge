@@ -23,8 +23,8 @@ This challenge is designed to test your familiarity with SQL (of the postgres fl
 
 There is only one table named Payments. The table tracks every time someone pays for a service. Every row represents a payment that was made including the time the payment was made, the id of the user that made the payment and the amount that the payment was for
 
-|---|---|
 |Column|Description|
+|---|---|
 |id| ID of row|
 |created_at|timestamp of when the payment was made|
 |user_id| ID of user that made the payment|
