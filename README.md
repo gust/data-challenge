@@ -40,8 +40,6 @@ In order to calculate the average revenue per customer at a particular day (say 
   1. Of those customers above, what was the cumulative total of purchases in their first n days (all purchases made within n days of their first purchase).
 
 Taking answer 2 and dividing by answer 1 gives us the the average revenue per customer at n days
-
-3. How would you go about graphing the average revenue per customer over time? 
     - Hint: you can use the psql function generate_series to create the numbers between 1 and 365
     
 The output should be in the form:
