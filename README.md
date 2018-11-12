@@ -52,4 +52,6 @@ The output should be in the form:
 |365| $z|
 
 Where $x represents the calculation above at day 0, $y represents the calculation at day 1, $z represents it at day 365 etc
-## Please use this [google form](https://docs.google.com/forms/d/e/1FAIpQLSdJTfdy_hO8V2F6X0phOXijgV27HzRUvEFV1-JqeC3RtiE5YA/viewform) to submit the code used to generate the table above (please be sure to include the same email you used on your application)
+## Please use this [google form](https://docs.google.com/forms/d/e/1FAIpQLSdJTfdy_hO8V2F6X0phOXijgV27HzRUvEFV1-JqeC3RtiE5YA/viewform) to submit the code used to generate the table above (please be sure to include the same email you used on your application).
+
+## [DDL and data file download](https://s3.amazonaws.com/gust-data-challenge/data_3)
