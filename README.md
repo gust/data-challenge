@@ -4,6 +4,7 @@
 
 Thank you for expressing interest in the Inference Data Scientist position at Gust.
 This challenge is designed to test your ability to organize and interpret data.
+Please submit your answers by 30 November 2018
 
 ## Setting up
 
