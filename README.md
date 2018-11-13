@@ -33,7 +33,7 @@ There is only one table named Payments. The table tracks every time someone pays
 
 # Question to answer
 
-We are interested in seeing the average revenue per customer over time (up to 365 days).
+We are interested in seeing the average revenue per customer (ARPC) over time (up to 365 days).
 This is used to calculate how much revenue we can expect to get from a customer after a certain amount of time.
 
 In order to calculate the average revenue per customer at a particular day (say day n), we need to calculate 2 things:
@@ -43,10 +43,23 @@ In order to calculate the average revenue per customer at a particular day (say 
 Taking answer 2 and dividing by answer 1 gives us the the average revenue per customer at n days
     - Hint: you can use the psql function generate_series to create the numbers between 1 and 365
     
-As an example: 
-If we have 10 customers who are more than 25 days old (25+ days between their first purchase and today) and 8 of those customers are more than 50 days old, we can calculate the average revenue per customer at 25 days by summing up all the payments made by the 10 customers in their first 25 days (25 days or less between their first purchase and that purchase) and dividing it by 10. 
-For Average revenue per customer at 50 days we sum up all the purchases made by the 8 customers in their first 50 days and divide by 8.
-Please note: for the average revenue per customer at 50 days, we only include the purchases in the first 50 days of those 8 customers and do not include any of the revenue of the 2 customers who are not at least 50 days old. 
+As an example (not representative of the actual dataset):
+Assume we have 10 customers.
+2 of these customers' oldest purchase is at most 25 days ago
+8 of these customers' oldest purchase is between 26 and 50 days ago
+All 10 customers have an age of at least 25 days
+
+If we want to calculate the ARPC at 25 days, we 
+1. take all customers with an age of at least 25 days (10 customers)
+2. sum up their purchases that ocurred within their first 25 days as a customer
+3. divide by the number of customers with an age of at least 25 days
+
+If we want to calculate the ARPC at 50 days, we 
+1. take all customers with an age of at least 50 days (8 customers)
+2. sum up their purchases that ocurred within their first 50 days as a customer
+3. divide by the number of customers with an age of at least 50 days
+
+Note: Notice how the purchases of the 2 customers with an age of 25 days are not included in the calcuation of ARPC at 50 days.
     
 The output should be in the form:
 
