@@ -43,8 +43,10 @@ In order to calculate the average revenue per customer at a particular day (say 
 Taking answer 2 and dividing by answer 1 gives us the the average revenue per customer at n days
     - Hint: you can use the psql function generate_series to create the numbers between 1 and 365
     
-As An example: 
-If we have 10 customers who are more than 25 days old (25+ days between their first purchase and today) and 8 of those customers are more than 50 days old, we can calculate the average revenue per customer at 25 days by summing up all the payments made by the 10 customers in their first 25 days and dividing it by 10. For Average revenue per customer at 50 days we sum up all the purchases made by the 8 customers in their first 50 days and divide by 8.
+As an example: 
+If we have 10 customers who are more than 25 days old (25+ days between their first purchase and today) and 8 of those customers are more than 50 days old, we can calculate the average revenue per customer at 25 days by summing up all the payments made by the 10 customers in their first 25 days (25 days or less between their first purchase and that purchase) and dividing it by 10. 
+For Average revenue per customer at 50 days we sum up all the purchases made by the 8 customers in their first 50 days and divide by 8.
+Please note: for the average revenue per customer at 50 days, we only include the purchases in the first 50 days of those 8 customers and do not include any of the revenue of the 2 customers who are not at least 50 days old. 
     
 The output should be in the form:
 
