@@ -6,19 +6,14 @@ Thank you for expressing interest in the Inference Data Scientist position at Gu
 This challenge is designed to test your ability to organize and interpret data.
 Please submit your answers by 30 November 2018
 
-## Setting up
+## Download Data
 
-- You will need Postgresql 9.1 or higher to access the data, you can download postgres by following the instructions [here](https://www.postgresql.org/download/)
-- Once you have postgres installed you can download the dataset we created for the challenge. Click this [link](https://s3.amazonaws.com/gust-data-challenge/data_3) and the data `data_3` file should download
-- Using your terminal, create a new database called gust_challenge using the `createdb` command ` createdb gust_challenge` or `createdb.exe -U postgres gust_challenge` for windows(depending on your setup you may need to specify the database host, port and user to run the command)
-- Load the data located in the downloaded pg data dump file `data_3` into the newly created database by running ` psql -d gust_challenge < data_3` or `psql.exe -U postgres -d gust_challenge` (once again, you may need to specify the database host, port and user to run the command)
-- You can access the database by running the `psql -d gust_challenge` command or `psql -U postgres -d gust_challenge` (possibly with the host, port and user specified)
+- If you would like to use Postgres to access the data, you can use the [PG_DUMP file here](https://s3.amazonaws.com/gust-data-challenge/data_3)
+- If you would like the data as a CSV (including headers) it can be [downloaded here](https://s3.amazonaws.com/gust-data-challenge/payments_data.csv)
 
 **For more information on creating postgres database see https://www.postgresql.org/docs/9.1/static/app-createdb.html**
 
 **For more information on using a pg_dump_file see https://www.postgresql.org/docs/9.1/static/backup-dump.html#BACKUP-DUMP-RESTORE**
-
-**For more information on creating a user see https://www.postgresql.org/docs/9.1/static/app-createuser.html**
 
 ## Explanation of Dataset
 
@@ -80,3 +75,4 @@ If you use any technologies other than postgresql to compute this data, please i
 
 
 ## [DDL and data file download](https://s3.amazonaws.com/gust-data-challenge/data_3)
+## [CSV Download](https://s3.amazonaws.com/gust-data-challenge/payments_data.csv)
