@@ -20,7 +20,7 @@ Please submit your answers by 30 November 2018
 
 **For more information on creating a user see https://www.postgresql.org/docs/9.1/static/app-createuser.html**
 
-## Explanation of Data
+## Explanation of Dataset
 
 There is only one table named Payments. The table tracks every time someone pays for a service. Every row represents a payment that was made including the time the payment was made, the id of the user that made the payment and the amount that the payment was for
 
@@ -43,6 +43,7 @@ In order to calculate the average revenue per customer at a particular day (say 
 Taking answer 2 and dividing by answer 1 gives us the the average revenue per customer at n days
     - Hint: you can use the psql function generate_series to create the numbers between 1 and 365
     
+## Example
 As an example (not representative of the actual dataset):
 Assume we have 10 customers.
 2 of these customers' oldest purchase is at most 25 days ago
@@ -61,6 +62,7 @@ If we want to calculate the ARPC at 50 days, we
 
 Note: Notice how the purchases of the 2 customers with an age of 25 days are not included in the calcuation of ARPC at 50 days.
     
+## Expected Output
 The output should be in the form:
 
 |Day|Average revenue per customer|
