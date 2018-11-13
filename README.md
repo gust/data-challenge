@@ -33,7 +33,7 @@ There is only one table named Payments. The table tracks every time someone pays
 
 # Question to answer
 
-We are interested in seeing the average revenue per customer (ARPC) over time (up to 365 days).
+We are interested in seeing the Average Revenue Per Customer (ARPC) over time (up to 365 days).
 This is used to calculate how much revenue we can expect to get from a customer after a certain amount of time.
 
 In order to calculate the average revenue per customer at a particular day (say day n), we need to calculate 2 things:
