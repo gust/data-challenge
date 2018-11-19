@@ -42,8 +42,8 @@ Taking answer 2 and dividing by answer 1 gives us the the average revenue per cu
 As an example (not representative of the actual dataset):
 
 Assume we have 10 customers.
-- 2 of these customers' oldest purchase is at most 25 days ago
-- 8 of these customers' oldest purchase is between 26 and 50 days ago
+- 2 of these customers' oldest purchase is 25 days ago
+- 8 of these customers' oldest purchase is 50 days ago
 - All 10 customers have an age of at least 25 days
 
 If we want to calculate the ARPC at 25 days, we 
